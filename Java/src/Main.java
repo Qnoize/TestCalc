@@ -3,7 +3,7 @@ import java.lang.*;
 
 public class Main{
     static String[] words;
-    public static int arr[] = new int[3];
+    public static int array[] = new int[3];
     static boolean firstInt, secondInt;
     static boolean firstRom, secondRom;
 
@@ -38,10 +38,7 @@ public class Main{
                         operationsRom.operationsRom();
                     }
                 }
-                firstInt = false;
-                secondInt = false;
-                firstRom = false;
-                secondRom = false;
+                firstInt = false; secondInt = false; firstRom = false; secondRom = false;
                 System.out.println("Продолжить работу(1-да, 0-нет): ");
                 Scanner in = new Scanner(System.in);
                 try{

@@ -44,25 +44,25 @@ public class Operations {
         switch(main.words[1])
         {
             case("+"): {
-                result = (main.arr[0] + main.arr[2]);
+                result = (main.array[0] + main.array[2]);
                 finishResultRom = romanDecimal.integerToRomanNumeral(result);
                 resultTextRom();
                 System.out.println("(" + result + ")");
                 break;}
             case("-"): {
-                result = (main.arr[0] - main.arr[2]);
+                result = (main.array[0] - main.array[2]);
                 finishResultRom = romanDecimal.integerToRomanNumeral(result);
                 resultTextRom();
                 System.out.println("(" + result + ")");
                 break;}
             case("/"): {
-                result = (main.arr[0] / main.arr[2]);
+                result = (main.array[0] / main.array[2]);
                 finishResultRom = romanDecimal.integerToRomanNumeral(result);
                 resultTextRom();
                 System.out.println("(" + result + ")");
                 break;}
             case("*"): {
-                result = (main.arr[0] * main.arr[2]);
+                result = (main.array[0] * main.array[2]);
                 finishResultRom = romanDecimal.integerToRomanNumeral(result);
                 resultTextRom();
                 System.out.println("(" + result + ")");

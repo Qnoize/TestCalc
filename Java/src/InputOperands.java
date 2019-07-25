@@ -30,12 +30,12 @@ public class InputOperands {
             return main.firstInt = true;
         } else {
             try{
-            main.arr[0] = romanDecimal.convertRomanToDecimal(main.words[0]);
-            if (main.arr[0] < 1 || main.arr[0] > 3999) {
+            main.array[0] = romanDecimal.convertRomanToDecimal(main.words[0]);
+            if (main.array[0] < 1 || main.array[0] > 3999) {
                 System.out.println("Неверное значение римского числа");
                 System.exit(0);
             }
-            System.out.println("первое число не Int " + main.words[0] + " - в десятичном виде - " + main.arr[0]);
+            System.out.println("первое число не Int " + main.words[0] + " - в десятичном виде - " + main.array[0]);
             } catch (Exception e){
                 System.out.println("Неверные значения ввода. Выход");
                 System.exit(0);
@@ -49,12 +49,12 @@ public class InputOperands {
             return main.secondInt = true;
         } else {
             try{
-            main.arr[2] = romanDecimal.convertRomanToDecimal(main.words[2]);
-            if (main.arr[2] < 1 || main.arr[2] > 3999) {
+            main.array[2] = romanDecimal.convertRomanToDecimal(main.words[2]);
+            if (main.array[2] < 1 || main.array[2] > 3999) {
                 System.out.println("Неверное значение римского числа");
                 System.exit(0);
             }
-            System.out.println("второе число не Int " + main.words[2] + " - в десятичном виде - " + main.arr[2]);
+            System.out.println("второе число не Int " + main.words[2] + " - в десятичном виде - " + main.array[2]);
             } catch (Exception e){
                 System.out.println("Неверные значения ввода. Выход");
                 System.exit(0);
