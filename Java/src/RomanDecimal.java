@@ -1,4 +1,3 @@
-import org.apache.commons.lang3.StringUtils;
 import java.util.HashMap;
 
 public class RomanDecimal {
@@ -22,10 +21,7 @@ public class RomanDecimal {
         }
     }
     public int convertRomanToDecimal(final String pRomanNumeral) {
-        if (StringUtils.isBlank(pRomanNumeral)) {
-            throw new RuntimeException("Римская цифровая строка либо null либо empty");
-        }
-        else {
+
             int index = pRomanNumeral.length() - 1;
             int result = getRomanNumeralValue(pRomanNumeral.charAt(index));
 
@@ -38,7 +34,7 @@ public class RomanDecimal {
                 }
             }
             return result;
-        }
+        
     }
     public void main(String... args){
         System.out.println(new RomanDecimal().convertRomanToDecimal("XCIX"));
