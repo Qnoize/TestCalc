@@ -1,9 +1,8 @@
-import java.util.HashMap;
 import org.apache.commons.lang3.StringUtils;
+import java.util.HashMap;
 
 public class RomanDecimal {
     private HashMap<Character, Integer> map;
-
     public RomanDecimal() {
         map = new HashMap<>();
         map.put('I', 1);
@@ -14,7 +13,6 @@ public class RomanDecimal {
         map.put('D', 500);
         map.put('M', 1000);
     }
-
     private int getRomanNumeralValue(char ch) {
         if (map.containsKey(ch)) {
             return map.get(ch);
@@ -23,7 +21,6 @@ public class RomanDecimal {
             throw new RuntimeException("Римская цифровая строка содержит недопустимые символы " + ch);
         }
     }
-
     public int convertRomanToDecimal(final String pRomanNumeral) {
         if (StringUtils.isBlank(pRomanNumeral)) {
             throw new RuntimeException("Римская цифровая строка либо null либо empty");
@@ -44,10 +41,8 @@ public class RomanDecimal {
         }
     }
     public void main(String... args){
-
         System.out.println(new RomanDecimal().convertRomanToDecimal("XCIX"));
     }
-
     public String integerToRomanNumeral(int input) {
         if (input < 1 || input > 3999)
             return "Неверное значение римского числа";
@@ -106,5 +101,4 @@ public class RomanDecimal {
         }
         return s;
     }
-
 }

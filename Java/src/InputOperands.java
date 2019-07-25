@@ -62,5 +62,4 @@ public class InputOperands {
             return main.secondRom = true;
         }
     }
-
 }

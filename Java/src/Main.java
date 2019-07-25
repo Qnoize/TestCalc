@@ -1,27 +1,23 @@
-import java.lang.reflect.Array;
 import java.util.*;
 import java.lang.*;
 
 public class Main{
-
     static String[] words;
     public static int arr[] = new int[3];
     static boolean firstInt, secondInt;
     static boolean firstRom, secondRom;
 
     public static void main(String[] args){
-
         Operations operationsRom = new Operations();
         Operations operationsDec = new Operations();
         IntCount intCount = new IntCount();
         boolean workProgram = true;
 
         while (workProgram) {
-            InputOperands.inputS(); // ВВод пользователем строки в консоль
-            words = InputOperands.getArray(); // Преобразование Строки в массив
+            InputOperands.inputS();
+            words = InputOperands.getArray();
 
             if(!InputOperands.matchOperands()) {
-
                 InputOperands.definitionNumFirst();
                 InputOperands.definitionNumSecond();
                 if(((firstInt && secondRom) || (firstRom && secondInt))){

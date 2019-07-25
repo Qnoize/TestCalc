@@ -3,7 +3,6 @@ public class Operations {
     static int finishResult;
     static String finishResultRom;
 
-
     static int operationsDec() {
         int i = Integer.parseInt(main.words[0]);
         int j = Integer.parseInt(main.words[2]);
@@ -84,5 +83,4 @@ public class Operations {
         System.out.println("арифметическая операция: " + main.words[1]);
         System.out.print("результат: " + finishResultRom);
     }
-
 }
