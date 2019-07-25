@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.*;
-
+// Проект калькулятор
 public class Main{
     static String[] words;
     public static int array[] = new int[3];
