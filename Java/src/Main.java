@@ -6,7 +6,7 @@ public class Main{
     public static int array[] = new int[3];
     static boolean firstInt, secondInt;
     static boolean firstRom, secondRom;
-
+// Main class
     public static void main(String[] args){
         Operations operationsRom = new Operations();
         Operations operationsDec = new Operations();
